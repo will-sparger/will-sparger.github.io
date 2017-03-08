@@ -7,7 +7,7 @@
 
 .hero {
   margin: 20px 20px;
-  background-image: url('./images/heart.png') center no-repeat;
+  background-image: url('./images/heart.png');
   height: 500px;
   background-position: center;
   background-size: contain;
