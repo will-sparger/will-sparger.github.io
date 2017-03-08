@@ -1,4 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .hero {
-  background-image: url('./images/heart.png');
+  margin: 20px 20px;
+  background-image: url('./images/heart.png') center no-repeat;
   height: 500px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: Merriweather;
+  margin: 20px 20px;
+
 }
