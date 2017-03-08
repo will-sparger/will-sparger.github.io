@@ -1,3 +1,4 @@
 .hero {
-  background-image: url('./images/heart.png')
+  background-image: url('./images/heart.png');
+  height: 500px;
 }
