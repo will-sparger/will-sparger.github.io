@@ -1,6 +1,112 @@
 /* font-family: 'Knewave', cursive;
-font-family: 'Merriweather', serif; */
+font-family: 'Merriweather Sans', sans-serif; */
 
-.main-nav {
-  display: inline;
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+nav ul li a {
+  padding: 1rem 2rem;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: red;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.bio:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a.skills:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+a.projects:hover {
+  color: #fff000;
+  text-decoration: underline;
+}
+
+a.current:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+a.artwork:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+a.contact:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;;
+}
+
+.header {
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-top: -15px;
+  max-width: 75%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;
+  align-items: center;*/
+}
+
+footer ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  /*padding: 10px;*/
+}
+
+footer ul li {
+  list-style: none;
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+footer ul li img {
+  /*padding: 1rem 2rem;*/
+  height: 30px;
+  width: 30px;
+}
+
+footer ul li img:hover {
+  height: 40px;
+  width: 40px;
+  margin-left: -10px;
 }

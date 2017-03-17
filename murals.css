@@ -1,11 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mural-background {
+  background-image: url('images/wall.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  height: 400px;
+  width: auto;
 }
-
-.wall {
-  height: 300px;
-  widows: 100%;
+.mural {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 10px 0;
 }
