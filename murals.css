@@ -4,7 +4,7 @@ body {
 }
 
 .mural-background {
-  background-image: url('images/wall.jpeg');
+  background-image: url('images/darkwall.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -17,7 +17,7 @@ body {
   height: 400px;
   width: auto;
 }
-.mural {
+#mural {
   max-height: 100%;
   max-width: 100%;
   margin: 10px 0;
