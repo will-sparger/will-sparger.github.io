@@ -7,12 +7,12 @@ $(function(){
   let artworkHeader = 'Imagine That';
   let contactHeader = 'Let\'s do this';
 
-  let bioText = 'bio blah blah';
-  let skillsText = 'skills blah blah';
-  let projectsText = 'projects blah blah';
-  let currentText = 'current blah blah';
-  let artworkText = 'artwork blah blah';
-  let contactText = 'contact blah blah';
+  let bioText = 'bio text';
+  let skillsText = 'skills text';
+  let projectsText = 'projects text';
+  let currentText = 'current text';
+  let artworkText = 'artwork text';
+  let contactText = 'contact text';
 
 
   let loadSection = function(e){
