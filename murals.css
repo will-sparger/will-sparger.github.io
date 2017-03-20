@@ -4,17 +4,17 @@ body {
 }
 
 .mural-background {
-  background-image: url('images/darkwall.png');
+  background-image: url('images/wall-compressor.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 330px;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 330px;
   width: auto;
 }
 #mural {

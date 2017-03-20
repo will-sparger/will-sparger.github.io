@@ -4,13 +4,15 @@ font-family: 'Merriweather Sans', sans-serif; */
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #282828;
 }
 
 nav ul {
   display: flex;
-  width: 100%;
+  width: 80%;
   margin: 0;
   padding: 10px;
 }
@@ -27,7 +29,10 @@ nav ul li a {
   font-size: 24px;
   color: #fff;
   text-decoration: none;
+}
 
+a#home:hover {
+  text-decoration: underline;
 }
 
 a#bio:hover {
@@ -73,6 +78,32 @@ a#contact:hover {
   letter-spacing: 2px;
 }
 
+
+
+#bio .active {
+  color: red;
+  text-decoration: underline;
+}
+.skills-active {
+  color: orange;
+  text-decoration: underline;
+}
+.projects-active {
+  color: #fff000;
+  text-decoration: underline;
+}
+.current-active {
+  color: green;
+  text-decoration: underline;
+}
+.artwork-active {
+  color: blue;
+  text-decoration: underline;
+}
+.contact-active {
+  color: purple;
+  text-decoration: underline;
+}
 p {
   margin-top: -15px;
   max-width: 75%;
@@ -82,15 +113,14 @@ p {
 footer {
   display: flex;
   flex-direction: row;
-  /*justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
 }
 
 footer ul {
   display: flex;
-  width: 100%;
-  margin: 0;
-  /*padding: 10px;*/
+  width: 50%;
+  margin-top: 20px;
 }
 
 footer ul li {
