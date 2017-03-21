@@ -39,8 +39,10 @@ $(function(){
 
 
   let headerText = function() { // determine the title
-    if(section === 'bio') {
-      return bioHeader;
+    if(section === 'home') {
+      return homeHeader;
+    } else if (section === 'bio') {
+    return bioHeader;
     } else if (section === 'skills') {
       return skillsHeader;
     } else if (section === 'projects') {
@@ -57,7 +59,9 @@ $(function(){
   headerText();
 
   let copyText = function() { // determine the copy
-    if(section === 'bio') {
+    if(section === 'home') {
+      return homeText;
+    } else if (section === 'bio') {
       return bioText;
     } else if (section === 'skills') {
       return skillsText;
