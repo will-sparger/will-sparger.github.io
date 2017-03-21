@@ -1,5 +1,6 @@
 $(function(){
 
+  let homeHeader = 'Will Sparger';
   let bioHeader = 'Moving in Place';
   let skillsHeader = 'Life in Motion';
   let projectsHeader = 'All Together Now';
@@ -7,6 +8,7 @@ $(function(){
   let artworkHeader = 'Imagine That (coming soon)';
   let contactHeader = 'Let\'s do something amazing';
 
+  let homeText = 'I create in a middle ground between design and development. I perceive patterns that allow me to uniquely solve problems and create simple, beautiful experiences. Although highly visual and creative, I\'m also analytical and detail-oriented which empowers me to think comprehensively in order to effectively implement complex ideas in novel ways. I’m actively seeking to join a team of passionate builders focused on creating innovative web content. If you’re seeking a front end engineer, UI developer, UX/Dev hybrid or a product minded developer with a high design acumen I’d love to chat!'
   let bioText = 'After four and a half years at Apple I had reached a personal turning point. I knew I was not content professionally but I was not sure how to take the next step.  After doing some exploration with HTML and CSS I saw a way forward in web development. I left Apple in September of 2016 and diligently began studying as much as possible. I quickly realized it is no small feat to strike out on your own and enter the industry. Knowing my time was limited, I decided to take the bootcamp route and landed on General Assembly. During the twelve week cohort I learned a great deal but what stands out most is the perspective I was able to achieve. I now know what matters to me in development and what I need to do to grow in the right ways moving forward. I am incredibly grateful to the entire team at GA for helping me pursue my passions as a creative, thoughtful problem solver.';
   let skillsText = 'skills text';
   let projectsText = 'projects text';
@@ -98,7 +100,7 @@ $(function(){
   };//end loadSection function
 
   //click event handlers
-  //$('#home').on('click', loadHome);
+  $('#home').on('click', loadSection);
   $('#bio').on('click', loadSection);
   $('#skills').on('click', loadSection);
   $('#projects').on('click', loadSection);
