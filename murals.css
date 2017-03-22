@@ -1,13 +1,15 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .mural-background {
   background-image: url('images/wall-compressor.png');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 0;
   height: 330px;
+  width: auto;
 }
 .container {
   display: flex;
@@ -15,7 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 330px;
-  width: auto;
+  width: 100%;
 }
 #mural {
   max-height: 100%;
