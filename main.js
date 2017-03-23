@@ -18,7 +18,7 @@ $(function(){
   let bioHeader = 'A New Start';
     let bioTestimonial = ['<p class="quote">','Will is an exceptional sort of developer. I\'ve never seen any student so interested in the process of planning an application. He\'s definitely a "measure twice, cut once" type of person, which I think is refreshing in development. He has a strong interest in both the UX and actual coding, which makes him extremely valuable in companies that desire someone knowledgeable in both. I think he has a bright future in not just development but possibly product management as well.', '</p>', '<br>', '<p class="source">', '- Mike Dang, General Assembly Instructor', '</p>', '<hr>'].join('');
       let bioParagraphOne = 'After four and a half years at Apple I had reached a personal turning point. I knew I was not content professionally but I was not sure how to take the next step.  After doing some exploration with HTML and CSS I saw a way forward in web development. I left Apple in September of 2016 and diligently began studying as much as possible.';
-        let bioParagraphTwo = 'I quickly realized it is no small feat to strike out on your own and enter the industry. Knowing my time was limited, I decided to take the bootcamp route and landed on General Assembly. During the twelve week cohort I learned a great deal but what stands out most is the perspective I was able to achieve. I now know what matters to me in development and what I need to focus on moving forward. I am incredibly grateful to the entire team at GA for helping me pursue my passions as a creative, thoughtful problem solver.'
+        let bioParagraphTwo = 'I quickly realized it is no small feat to strike out on your own and enter the industry. Knowing my time was limited, I decided to take the bootcamp route and landed on General Assembly. During the twelve week cohort I learned a great deal but what stands out most is the perspective I was able to gain. I now know what matters to me in development and what I need to focus on moving forward. I am incredibly grateful to the entire team at GA for helping me pursue my passions as a creative, thoughtful problem solver.'
   let bioContent = [bioTestimonial, '<p>', bioParagraphOne , '</p>', '<p>', bioParagraphTwo, '</p>'].join('');
 
   let skillsHeader = 'Brain Power';
@@ -92,15 +92,15 @@ $(function(){
 
 
 
-  // $( window ).resize(function() {
-  //   if ($(window).width() < 810) {
-  //     $('#navigation').
-  //   //$('#menu-button').removeClass('inactive');
-  //   }
-  // });
+  let resize = $( window ).resize(function() {
+    if ($(window).width() < 810) {
+
+    }
+  });
   let navLinks = $('#nav-list').find('a')
   let menuAction = function(e) {
     e.preventDefault();
+    console.log('clicked!');
 
     if(navLinks[1].style.display === 'inline') {
       navLinks.each(function () {
@@ -124,7 +124,7 @@ $(function(){
   let loadSection = function(e){
 
     e.preventDefault();
-
+    window.scrollTo(0, 0);
     let section = $(this).text();
     console.log(this.style.display);
     if(this.style.display === 'inline') {
