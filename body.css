@@ -67,11 +67,11 @@ a#current:hover {
 }
 
 a#artwork:hover {
-  color: blue;
+  color: dodgerblue;
 }
 
 a#contact:hover {
-  color: purple;
+  color: darkOrchid;
 }
 
 section, #content {
@@ -87,10 +87,9 @@ section, #content {
   font-size: 3em;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #282828;
   margin-bottom: -5px;
 }
-
-
 
 #bio .active {
   color: red;
@@ -132,9 +131,11 @@ p {
   max-width: 60%;
   text-align: justify;;
   font-family: 'Ubuntu', sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   font-style: italic;
-  color: DimGrey;
+  color: #282828;
+  letter-spacing: .7px;
+  line-height: 1.4em;
 }
 
 .source {
@@ -142,35 +143,71 @@ p {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: .7em;
-  color: DimGrey;
+  color: #282828;
   margin-top: -7px;
+  letter-spacing: .7px;
 }
 
 hr {
   width: 30%;
   color: black;
 }
-.project-tech {
-  list-style: none;
-}
 
-.skill-header {
+.subheader {
   font-family: 'Caveat', cursive;
   font-weight: 400;
   font-size: 2em;
-  color: green;
-
+  color: royalblue;
   margin-bottom: -5px;
+
 }
-.tldr {
-  font-weight: 700;
+.skills {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
 }
 .skill-paragraph {
-  font-weight: 300;
   text-align: justify;
+  margin-top: -5px;
   margin-bottom: -5px;
 }
+.project-tech {
+  list-style: none;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+.project-icon {
+  height: 30px;
+  width: 30px;
 
+}
+.header-container a {
+  text-decoration: none;
+}
+/*.header-container a:hover {
+  text-decoration: underline;
+
+}*/
+.project-header {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: -5px;
+}
+.first {
+  color: #A03138;
+  margin-top: 40px;
+}
+.second {
+  color: #00BF93;
+
+}
+.third {
+  color: #FFB40E;
+}
 footer {
   display: flex;
   flex-direction: row;
