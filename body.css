@@ -41,6 +41,7 @@ nav ul li a {
   padding: 1rem 2rem;
   font-family: 'Caveat', cursive;
   font-size: 24px;
+  font-weight: 400;
   color: #fff;
   text-decoration: none;
 }
@@ -77,13 +78,16 @@ section, #content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 20px;;
+  margin: 20px 20px;
+
 }
 
 #header {
   font-family: 'Caveat', cursive;
   font-size: 3em;
+  font-weight: 700;
   letter-spacing: 2px;
+  margin-bottom: -5px;
 }
 
 
@@ -113,9 +117,58 @@ section, #content {
   text-decoration: underline;
 }
 p {
-  margin-top: -15px;
   max-width: 75%;
   font-family: 'Ubuntu', sans-serif;
+  color: #282828;
+  text-align: justify;
+}
+
+/*.dynamic-container {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.quote {
+  max-width: 60%;
+  text-align: justify;;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: .8em;
+  font-style: italic;
+  color: DimGrey;
+}
+
+.source {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: .7em;
+  color: DimGrey;
+  margin-top: -7px;
+}
+
+hr {
+  width: 30%;
+  color: black;
+}
+.project-tech {
+  list-style: none;
+}
+
+.skill-header {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 2em;
+  color: green;
+
+  margin-bottom: -5px;
+}
+.tldr {
+  font-weight: 700;
+}
+.skill-paragraph {
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: -5px;
 }
 
 footer {
