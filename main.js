@@ -92,134 +92,98 @@ $(function(){
 
 
 
-
   // $( window ).resize(function() {
   //   if ($(window).width() < 810) {
   //     $('#navigation').
   //   //$('#menu-button').removeClass('inactive');
   //   }
   // });
-
+  let navLinks = $('#nav-list').find('a')
   let menuAction = function(e) {
-    // $('#list').children().on('click', function (e) {
-    //
-    //  //apply jQuery's stop() method here
-    //  alert("children");
-  // });
-    $('#list li').each(function(index){
-      //console.log(this.id);
+    e.preventDefault();
 
-      if(this.id === 'list') {
-      } else if (this.id === 'menu-button'){
+    if(navLinks[1].style.display === 'inline') {
+      navLinks.each(function () {
+        if(this.id === 'menu-button') {
+        } else {
+          $(this).css('display', 'none')
+        }
+      })
+    }
+    $('#nav-list').children().each(function () {
+    if(this.id === 'menu-button') {
+    } else if(this.style.display === 'none') {
+        this.style.display = '';
+      } else {
+        this.style.display = 'inline';
       }
-      // } else if(this.style.display === 'inline-block'){
-      //
-      //   this.style.display = 'none';
-       else {
-         let menuState = function() {
+  });
 
-           if(this.style.display === 'inline-block') {
-             this.style.display = 'none'
-           } else {
-             this.style.display = 'inline-block'
-           }
-
-       }
-
-        menuState();
-      }
-    })
   }
 
   let loadSection = function(e){
 
-  e.preventDefault();
+    e.preventDefault();
 
-  let section = $(this).text();
-  console.log(section);
-  // let activeClassVerification = function() {
-  //   $('#navigation').each(function (index, element) {
-  //     if($(element).hasClass('active')) {
-  //       // $(element).removeClass('active')
-  //       console.log('Removed!');
-  //     }
-  //   })
-  // };
-
-  $('#mural').attr('src', 'images/' + section + '.png'); //set the mural image
-  //activeClassVerification();
-
-
-
-  let header = function() { // determine the header
-    if(section === 'home') {
-      return homeHeader;
-    } else if (section === 'bio') {
-    return bioHeader;
-    } else if (section === 'skills') {
-      return skillsHeader;
-    } else if (section === 'projects') {
-      return projectsHeader;
-    } else if (section === 'current') {
-      return currentHeader;
-    } else if (section === 'artwork') {
-      return artworkHeader;
-    } else if(section === 'contact') {
-      return contactHeader;
+    let section = $(this).text();
+    console.log(this.style.display);
+    if(this.style.display === 'inline') {
+      navLinks.each(function () {
+        if(this.id === 'menu-button') {
+        } else {
+          $(this).css('display', 'none')
+        }
+      })
     }
-  };
+    $('#mural').attr('src', 'images/' + section + '.png'); //set the mural image
 
-  header();
+    let header = function() { // determine the header
+      if(section === 'home') {
+        return homeHeader;
+      } else if (section === 'bio') {
+      return bioHeader;
+      } else if (section === 'skills') {
+        return skillsHeader;
+      } else if (section === 'projects') {
+        return projectsHeader;
+      } else if (section === 'current') {
+        return currentHeader;
+      } else if (section === 'artwork') {
+        return artworkHeader;
+      } else if(section === 'contact') {
+        return contactHeader;
+      }
+    };
 
-  let content = function() { // determine the content
-    if(section === 'home') {
-      $('#content').html('');
-      return $('#content').append(homeContent);
-    } else if (section === 'bio') {
-      $('#content').html('');
-      return $('#content').append(bioContent);
-    } else if (section === 'skills') {
-      $('#content').html('');
-      return $('#content').append(skillsContent);
-    } else if (section === 'projects') {
-      $('#content').html('');
-      return $('#content').append(projectsContent);
-    } else if (section === 'current') {
-      $('#content').html('');
-      return $('#content').append(currentContent);
-    } else if (section === 'artwork') {
-      $('#content').html('');
-      return $('#content').append(artworkContent);
-    } else if(section === 'contact') {
-      $('#content').html('');
-      return $('#content').append(contactContent);
-    }
-  };
+    header();
 
-  content();
-
-  $('#header').text(header); // set the content title
-
-  $('#copy').text(content); // set the content copy
-
-      // var copy = ['<li>',
-      //                    '<div class="row reg-post">',
-      //                     '<div class="col-md-1">',
-      //                        '<h5>' , childScore , '</h5>',
-      //                      '</div>',
-      //                      '<div class="col-md-3">',
-      //                        '<img src="' , emptyImage ? 'img/Reddit.png' : childImage ,'"/>',
-      //                      '</div>',
-      //                      '<div class ="col-md-7">',
-      //                      '<h5>',
-      //                      '<a href="' , childUrl, '">', childTitle, '</a>',
-      //                      '</h5>',
-      //                      '</div>',
-      //                    '</div>',
-      //                  '</li>'
-      //                 ].join('');
-      //  $('#content').append(copy);
-
+    let content = function() { // determine the content
+      if(section === 'home') {
+        $('#content').html('');
+        return $('#content').append(homeContent);
+      } else if (section === 'bio') {
+        $('#content').html('');
+        return $('#content').append(bioContent);
+      } else if (section === 'skills') {
+        $('#content').html('');
+        return $('#content').append(skillsContent);
+      } else if (section === 'projects') {
+        $('#content').html('');
+        return $('#content').append(projectsContent);
+      } else if (section === 'current') {
+        $('#content').html('');
+        return $('#content').append(currentContent);
+      } else if (section === 'artwork') {
+        $('#content').html('');
+        return $('#content').append(artworkContent);
+      } else if(section === 'contact') {
+        $('#content').html('');
+        return $('#content').append(contactContent);
+      }
+    };
+    content();
+    $('#header').text(header); // set the content title
+    $('#copy').text(content); // set the content copy
 
   };//end loadSection function
 
