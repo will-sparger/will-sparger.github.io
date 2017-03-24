@@ -189,10 +189,10 @@ $(function(){
 
   //click event handlers
 
-  $('#menu-button').on('click touchstart', menuAction)
+  $('#menu-button').on('tap', menuAction)
 
   $('#home').on('click touchstart', loadSection);
-  $('#bio').on('click touchstart', loadSection);
+  $('#bio').on('tap', loadSection);
   $('#skills').on('click touchstart', loadSection);
   $('#projects').on('click touchstart', loadSection);
   $('#current').on('click touchstart', loadSection);
