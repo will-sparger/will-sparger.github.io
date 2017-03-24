@@ -186,10 +186,6 @@ hr {
 .header-container a {
   text-decoration: none;
 }
-/*.header-container a:hover {
-  text-decoration: underline;
-
-}*/
 .project-header {
   font-family: 'Caveat', cursive;
   font-weight: 400;
