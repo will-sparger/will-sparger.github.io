@@ -75,6 +75,7 @@ a#contact:hover {
 section, #content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 20px 20px;
 
@@ -215,13 +216,13 @@ footer {
 
 footer ul {
   display: flex;
-  width: 50%;
+  width: 60%;
   margin-top: 20px;
 }
 
 footer ul li {
   list-style: none;
-  text-align: center;
+
   flex: 1 0;
 }
 
