@@ -189,15 +189,15 @@ $(function(){
 
   //click event handlers
 
-  $('#menu-button').on('click', menuAction)
+  $('#menu-button').on('touchstart click', menuAction)
 
-  $('#home').on('click', loadSection);
-  $('#bio').on('click', loadSection);
-  $('#skills').on('click', loadSection);
-  $('#projects').on('click', loadSection);
-  $('#current').on('click', loadSection);
-  $('#artwork').on('click', loadSection);
-  $('#contact').on('click', loadSection);
+  $('#home').on('touchstart click', loadSection);
+  $('#bio').on('touchstart click', loadSection);
+  $('#skills').on('touchstart click', loadSection);
+  $('#projects').on('touchstart click', loadSection);
+  $('#current').on('touchstart click', loadSection);
+  $('#artwork').on('touchstart click', loadSection);
+  $('#contact').on('touchstart click', loadSection);
 
 
 }); // end doc ready
