@@ -191,13 +191,13 @@ $(function(){
 
   $('#menu-button').on('touchstart click', menuAction)
 
-  $('#home').on('touchstart click', loadSection);
-  $('#bio').on('touchstart click', loadSection);
-  $('#skills').on('touchstart click', loadSection);
-  $('#projects').on('touchstart click', loadSection);
-  $('#current').on('touchstart click', loadSection);
-  $('#artwork').on('touchstart click', loadSection);
-  $('#contact').on('touchstart click', loadSection);
+  $('#home').on('click touchstart', loadSection);
+  $('#bio').on('click touchstart', loadSection);
+  $('#skills').on('click touchstart', loadSection);
+  $('#projects').on('click touchstart', loadSection);
+  $('#current').on('click touchstart', loadSection);
+  $('#artwork').on('click touchstart', loadSection);
+  $('#contact').on('click touchstart', loadSection);
 
 
 }); // end doc ready
