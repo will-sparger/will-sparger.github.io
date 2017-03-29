@@ -258,13 +258,13 @@ $(function(){
 
   $('#menu-button').on('click', menuAction)
 
-  $('#home').on('touchstart click', loadSection);
-  $('#bio').on('touchstart click', loadSection);
-  $('#skills').on('touchstart click', loadSection);
-  $('#projects').on('touchstart click', loadSection);
-  $('#current').on('touchstart click', loadSection);
-  $('#artwork').on('touchstart click', loadSection);
-  $('#contact').on('touchstart click', loadSection);
+  $('#home').on('click', loadSection);
+  $('#bio').on('click', loadSection);
+  $('#skills').on('click', loadSection);
+  $('#projects').on('click', loadSection);
+  $('#current').on('click', loadSection);
+  $('#artwork').on('click', loadSection);
+  $('#contact').on('click', loadSection);
 
 
 }); // end doc ready
