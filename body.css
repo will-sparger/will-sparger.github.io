@@ -1,16 +1,5 @@
 
-@media (max-width: 810px) {
-  .nav-options  {
-    flex-direction: column;
-  }
-  .nav-options a:not(:first-child) {
-    display: none;
-  }
-  nav a.burger {
 
-    display: inline;
-  }
-}
 .burger {
   display: none;
   align-self: center;
@@ -75,8 +64,8 @@ a#contact:hover {
 section, #content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;;
+  align-items: flex-start;;
   margin: 20px 20px;
 
 }
@@ -88,6 +77,7 @@ section, #content {
   letter-spacing: 2px;
   color: #282828;
   margin-bottom: -5px;
+  margin-left: 20px;
 }
 
 #bio .active {
@@ -115,7 +105,7 @@ section, #content {
   text-decoration: underline;
 }
 p {
-  max-width: 75%;
+  max-width: 90%;
   font-family: 'Ubuntu', sans-serif;
   color: #282828;
   text-align: justify;
@@ -127,7 +117,7 @@ p {
 }*/
 
 .quote {
-  max-width: 60%;
+  max-width: 90%;
   text-align: justify;;
   font-family: 'Ubuntu', sans-serif;
   font-size: .9em;
@@ -158,13 +148,16 @@ hr {
   font-size: 2em;
   color: royalblue;
   margin-bottom: -5px;
+}
 
+.tldr {
+  color: royalblue;
 }
 .skills {
   font-family: 'Ubuntu', sans-serif;
   text-align: justify;
 }
-.skill-paragraph {
+.content-paragraph {
   text-align: justify;
   margin-top: -5px;
   margin-bottom: -5px;
@@ -232,4 +225,25 @@ footer ul li img:hover {
   height: 35px;
   width: 35px;
   margin-left: -5px;
+}
+
+@media (max-width: 515px) {
+  p {
+    max-width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .nav-options  {
+    flex-direction: column;
+  }
+  .nav-options a:not(:first-child) {
+    display: none;
+  }
+  nav a.burger {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  
 }
